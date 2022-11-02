@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkslategrey;
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    flex-direction: column;
+}
+
+#veiwport {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    width: auto;
+    font-size: 100px;
+    font-family: 'Comfortaa', cursive;
+    line-height: auto;
+    text-align: center;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 23px;
+    text-align: center;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 45px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 15px;
+    margin: 5px;
+    text-align: center;
+}
+
+#headder {
+    width: auto;
+    height: 150px;
+    border: solid #ffffff;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+#container {
+    width: 100vw;
+    height: 2000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.artist-box {
+    width: 50%;
+    height: auto;
+    flex: 1;
+    border: solid #ffffff;
+    border-radius: 20px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#artist-box1 {
+    margin-left: 10px;
+}
+
+/* #artist-box2 {
+
+}
+
+#artist-box3 {
+
+} */
+
+#artist-box4 {
+    margin-right: 10px;
+}
+
+.artist-profile {
+    width: auto;
+    height: 200px;
+    border: solid #ffffff;
+    border-radius: 12.5px;
+    display: flex;
+    flex: 1;
+    padding: 5px;
+    margin-bottom: 5px;
+
+}
+
+.portrait {
+    height: 185px;
+    border: solid #ffffff;
+    border-radius: 10px;
+}
+
+.info-box {
+    height: 185px;
+    width: auto;
+    border: solid #ffffff;
+    border-radius: 10px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.link-button {
+    width: auto;
+    height: auto;
+    border: solid #ffffff;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+
+.iframebox {
+    width: 100%;
+    height: 100%;
+    border: solid #ffffff;
+    border-radius: 12.5px;
+    padding: 0;
+    display: flex;
+    flex: 1;
+
+}
+
+.iframeholder {
+    width: 100%;
+    height: 100%;
+    border: solid #ffffff;
+    border-radius: 12.5px;
+    margin: auto;
+    flex-grow: 1;
+
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 20px;
+        line-height: auto;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        line-height: 25px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    #headder {
+        height: 50px;
+    }
+
+    .iframe {
+        transform: rotate(270deg);
+    }
+
+    .iframeholder {
+         transform: rotate(270deg);
+        width: 50%;
+    
+        border: solid #ffffff;
+        border-radius: 12.5px;
+        padding: 0;
+        flex: 2;
+       
+
+    }
+
+    #container {
+        flex-direction: column;
+
+    }
+
+    .artist-box {
+        width: auto;
+        height: 400px;
+    }
+}
